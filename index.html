@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="height=device-height, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Dev Studying | Frontend</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md nav-light bg-light">
+            <a href="#" class="navbar-brand">
+                <img class="navbar-brand img-fluid" src="./img/logo01.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#navbarx">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarx" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item p-2">
+                        <a href= "#servicos" class="btn btn-lg btn-outline-success">Serviços</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href= "#sobre" class="btn btn-lg btn-outline-success">Sobre</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href= "#contato" class="btn btn-lg btn-outline-success">Contato</a>
+                    </li>
+                    <li class="nav-item p-2 dropdown">
+                        <a href="#" class="btn btn-lg btn-outline-success dropdown-toggle" data-toggle="dropdown">
+                            Telefones
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">(48) 3333-2255</a>
+                            <a class="dropdown-item" href="#">(48) 9695-2255</a>
+                            <a class="dropdown-item" href="#">(48) 9694-2255</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>  
+    </header>  
+    <main class="bg-success">
+        <div class="container mw-100 p-0 mb-5" style="box-shadow: 0px 5px 10px;">
+            <div id="carouselPala" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner" style="text-shadow: 2px 2px 6px black;">
+                    <div class="carousel-item active">
+                        <img class="d-none d-sm-block w-100" src="./img/01-lg.jpg" alt="">
+                        <img class="d-sm-none w-100" src="./img/01-xs.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Vaga para carros elétricos</h3>
+                            <p>Deixe seu carro elétrico carregando conosco com total segurança.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-sm-block w-100" src="./img/02-lg.jpg" alt="">
+                        <img class="d-sm-none w-100" src="./img/02-xs.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Sim... temos bicicletário</h3>
+                            <p>Para você que vai trabalhar de bicicleta, vá tranquilo que carregamos e cuidamos da sua 'magrela'.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-sm-block w-100" src="./img/03-lg.jpg" alt="">
+                        <img class="d-sm-none w-100" src="./img/03-xs.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Total segurança</h3>
+                            <p>Relaxe, contamos com tecnologia de ponta para uma total segurança.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-sm-block w-100" src="./img/04-lg.jpg" alt="">
+                        <img class="d-sm-none w-100" src="./img/04-xs.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Saia do stress</h3>
+                            <p>O trânsito está caótico? Relaxe em nosso espaço vip, tudo por conta da casa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-none d-sm-block w-100" src="./img/05-lg.jpg" alt="">
+                        <img class="d-sm-none w-100" src="./img/05-xs.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Estacionamento amplo</h3>
+                            <p>Vagas cobertas e amplo espaço para melhor conforto e atendimento.</p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev bg-success" href="#carouselPala" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next bg-success" href="#carouselPala" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>            
+        </div>
+        <section style="background: linear-gradient(to bottom, transparent, #333); text-shadow: 4px 4px 4px black;">
+            <div id="servicos" class="container pb-5">
+                <div class="row text-light align-items-start justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="São mais de 100 vagas para seu maior conforto" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-1.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text">Mais de <strong>100 vagas</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Planos especiais para mensalistas, temos valores para diárias também" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-2.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Planos especiais</strong> para mensalistas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="deixe sua bicicleta elétrica carregando conosco" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-3.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text">Carregamento para <strong>bicicletas elétricas</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Relaxe em nosso ambiemte VIP" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-6.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text">Serviços <strong>agregados</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Tudo automatizado... entrada rápida" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-5.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text">Entrada facilitada com o <strong>Sistema de Reconhecimento de Placa</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Baixe nosso aplicativo." data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-9.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Pagamento digital</strong> App que permite pagamento via cartão de crédito</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Vaga com ponto de carregamento para carros elétricos" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-4.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text">Vaga para <strong>carro elétrico</strong> (com ponto de carregamento)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Acabou a bateria do celular? Carregue ele aqui." data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-10.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text">Pontos para <strong>carregamento de celular</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Tem um encontro ou uma reunião e precisa tomar um banho??? Resolvemos isso para você." data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-7.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Ducha grátis</strong> (para pessoas)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 mt-5" data-container="body" data-toggle="popover" data-placement="top" data-content="Vagas grátis para bicicletas" data-trigger="hover">
+                        <div class="card align-items-center text-center bg-transparent border-0">
+                            <img class="card-img-top w-50" src="./img/icon-8.png" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Vagas grátis</strong> para bicicletas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background: linear-gradient(to bottom, #333 100%, transparent);">
+            <div class="container mw-100 pt-5 pb-5">
+                <div class="row align-items-center">
+                    <div class="col text-right">
+                        <img class="img-fluid" src="./img/mao.png" alt="mao">
+                    </div>
+                    <div class="col">
+                        <a href=""><img class="img-fluid" src="./img/icon-playstore.png" alt="mao"></a>
+                        <a href=""><img class="img-fluid" src="./img/icon-appstore.png" alt="mao"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background: linear-gradient(to bottom, #333, transparent)">
+            <div id="sobre" class="container bg-light pt-5 pb-5 mb-5" style="box-shadow: 10px 10px 10px;">
+                <div class="row text-body">
+                    <div class="col-12 text-center">
+                        <h1 class="mb-5" style="text-shadow: 1px 1px 5px gray;">Estacionar não é parar no tempo.</h1>
+                        <p>
+                            Paladini Parking é um espaço completamente novo de suporte à sua mobilidade. Oferecendo uma visão inovadora e padrão de qualidade único, transformamos o estacionamento em espaço vital ao seu dia a dia.
+                        </p>
+                        <p>
+                            Estamos a 5 anos atendendo com o maior nível de satizfação possível. Com tecnologia de ponta, cuidamos das suas necessidades diárias referente a mobilidade... temos Vaga para carro elétrico (com ponto de carregamento), 
+                            entrada facilitada com o Sistema de Reconhecimento de Placa, ducha grátis (para pessoas) e muito mais. venha nos conhecer
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <div id="contato" class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3">
+                    <h1 style="text-shadow: 1px 1px 5px #E5E5E5;">Onde estamos:</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14143.627433126076!2d-48.580820521189956!3d-27.596417152875695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c8509c8ad23d1c0!2sEstacionamento!5e0!3m2!1spt-BR!2sbr!4v1598030337185!5m2!1spt-BR!2sbr" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                    <h1 style="text-shadow: 1px 1px 5px #E5E5E5;">Contato:</h1>
+                    <form acyion="#">
+                       <div class="form-group">
+                            <label for="nome"><strong>Seu nome</strong></label>
+                            <input type="text" class="form-control form-control-lg" name="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><strong>Endereço de email</strong></label>
+                            <input type="email" class="form-control form-control-lg" name="email" aria-describedby="emailHelp" placeholder="Seu email" required>
+                            <small id="emailHelp" class="form-text text-black-50">Campo obrigatório</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto"><strong>Assunto</strong></label>
+                            <select name="assunto" class="form-control form-control-lg">
+                                <option value="invalid" selected></option>
+                                <option value="servicos">Serviços</option>
+                                <option value="mensalidades">Mensalidades</option>
+                                <option value="">Opinião</option>
+                                <option value="">Outros assuntos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="texto"><strong>Em que podemos lhe ajudar?</strong></label>
+                            <textarea class="form-control form-control-lg" name="texto" rows="5" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="noticias" checked>
+                            <label class="form-check-label" for="noticias">Quero receber informação de promoções em meu email.</label>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-dark">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>              
+    </main>
+    <footer>
+        <div class="container text-center pt-5">
+            <h2>Projeto Bootstrap</h2>
+            <p>Este é um projeto realizado após a certificação do curso bootstrap pela School of Net</p>
+            <p><a href="https://www.schoolofnet.com/validar-certificado/?certificate=6f6a96a8-8cb4-415a-8a9b-6dbf6412693e">Visualizar certificado</a></p>
+            <p><a target="_blank" href="https://github.com/clovispaladini/boostrap1">https://github.com/clovispaladini/boostrap1</a></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="popover"]').popover()
+    })
+</script> 
+</body>
+</html>
